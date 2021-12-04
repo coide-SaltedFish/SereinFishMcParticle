@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "sereinfish-mc-particle",
+  "version": "${version}",
+
+  "name": "sereinfish-mc-particle",
+  "description": "为指定物品添加自定义的粒子效果",
+  "authors": [
+    "SereinFish"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/icon/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.sereinfish.mc.particle.Start"
+    ]
+  },
+  "mixins": [
+    "sereinfish.mc.particle.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.12.5",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
